@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.fraunces {
+  font-family: "Fraunces", serif;
+}
+
+.manrope {
+  font-family: "Manrope", sans-serif;
+}
+
+.primaryBtnHover:hover {
+  box-shadow: inset 0px 0px 0px 2px #44ffa1;
+}
+
+.secondaryBtnBorder {
+  border-bottom: 3px solid #44ffa1;
+}
