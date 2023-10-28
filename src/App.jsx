@@ -6,7 +6,7 @@ export default function App() {
     <div>
       <Header />
       <Hero />
-      <section className="pt-[155px] pb-[328px] px-[16px] text-center grid gap-[40px]">
+      <main className="pt-[155px] pb-[328px] px-[16px] text-center grid gap-[40px]">
         <OneTwoThree
           number="1"
           title="Actionable insights"
@@ -23,7 +23,9 @@ export default function App() {
           title="Always affordable"
           text="Always affordable pricing that scales with your business. Get top-quality product data analytics services without hidden costs or unexpected fees."
         />
-      </section>
+      </main>
+      <PurpleBottomSection />
+      <Footer />
     </div>
   );
 }
@@ -64,5 +66,38 @@ function OneTwoThree({ number, title, text }) {
         </p>
       </div>
     </section>
+  );
+}
+
+function PurpleBottomSection() {
+  return (
+    <section className="p-[32px] bg-purple text-white text-center">
+      <h1 className="mb-[16px] fraunces font-semibold text-[32px] tracking-0">
+        Be the first to test
+      </h1>
+      <p className="mb-[24px] manrope font-normal text-[16px] leading-[28px] tracking-0">
+        Hi, I'm Louis Graham, the founder of the company. Book a demo call with
+        me to become a beta tester for our app and kickstart your company. Apply
+        for access below and I’ll be in touch to schedule a call.
+      </p>
+      <PrimaryBtn>Apply for access</PrimaryBtn>
+    </section>
+  );
+}
+
+function Footer() {
+  return (
+    <footer className="pt-[74px] px-[130px] pb-[64px]">
+      <img
+        className="mb-[58px] mx-auto"
+        src="public/logo-dark.svg"
+        alt="logo"
+      />
+      <div className="flex items-center justify-center gap-[28px]">
+        <img src="public\icon-facebook.svg" alt="facebook" />
+        <img src="public\icon-twitter.svg" alt="twitter" />
+        <img src="public\icon-instagram.svg" alt="instagram" />
+      </div>
+    </footer>
   );
 }
